@@ -104,7 +104,7 @@ server.post('/projects/:id/actions', validatePost, (req,res)=>{
     })
 })
 
-//PUT: '/actions:id'
+//PUT: '/actions/:id'
 server.put('/actions/:id', validateAction, (req,res)=>{
     const {description, notes} = req.body;
 
