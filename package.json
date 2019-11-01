@@ -4,7 +4,8 @@
   "description": "Node API Challenge",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js",
+    "dev":"nodemon index.js",
+    "server": "node index.js",
     "start": "node index.js"
   },
   "repository": {
