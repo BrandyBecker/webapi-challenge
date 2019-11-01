@@ -13,17 +13,6 @@ server.get('/projects', (req,res)=>{
     })
 })
 
-//GET: '/projects/:id' 
-server.get('/projects/:id', validateAction, (req,res)=>{
-    projModel.get(req.project)
-        .then(project => {
-            res.status(200).json(action)
-        })
-        .catch(()=>{
-            res.status(500).json({Error: 'AHG! Could not RETRIEVE an Action from the Database!'})
-        })
-})
-
 
 //POST: '/projects' 
 server.post('/projects', (req,res)=>{
