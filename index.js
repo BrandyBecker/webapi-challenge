@@ -12,3 +12,19 @@ I need this code, just don't know where, perhaps should make some middleware, do
 
 Go code!
 */
+// TL:DR
+
+const express = require('express')
+
+
+const server = express();
+
+
+server.get('/', (req,res)=>{
+
+})
+
+const port = process.env.PORT||4000
+server.listen(port, ()=> {
+    console.log(`\n=== ⭐  API on Port ${port} ⭐  ===\n`)
+})
